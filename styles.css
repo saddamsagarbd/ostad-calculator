@@ -1,0 +1,93 @@
+body {
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calculator {
+    width: 320px;
+    background-color: #2c3e50;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.display-container {
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: right;
+    position: relative;
+    min-height: 60px;
+}
+
+.display {
+    font-size: 2.5rem;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.memory-indicator {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    font-size: 0.8rem;
+    color: #7f8c8d;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.btn {
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: 15px 0;
+    border: none;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.number-btn {
+    background-color: #34495e;
+    color: white;
+}
+
+.number-btn:hover {
+    background-color: #3d566e;
+}
+
+.function-btn {
+    background-color: #3498db;
+    color: white;
+}
+
+.function-btn.btn-warning {
+    background-color: #f39c12;
+}
+
+.function-btn.btn-danger {
+    background-color: #e74c3c;
+}
+
+.function-btn.btn-success {
+    background-color: #2ecc71;
+}
+
+.function-btn:hover {
+    opacity: 0.9;
+}
+
+#resultContent {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
